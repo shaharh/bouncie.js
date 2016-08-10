@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*transition: all 0.5s;*/
+}
+#container {
+    position: relative;
+    text-align: center;
+}
+.label {
+    font-size: 90px;
+    position: relative;
+    text-align: center;
+    margin: 0 20px;
+    z-index: 0;
+    font-family: sans-serif;
+}
+.bouncie-this {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: auto;
+}
+.bouncie-front-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 1;
+    color: red;
+    transition: all 0.3s;
+    transition-timing-function: ease;
+    width: 100%;
+}
+.bouncie-front-layer.open {
+    max-height: 100%;
+}
+
+/*other styles*/
+
+ul {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+li {
+    background: lightskyblue;
+    text-align: center;
+    font-size: 25px;
+}
+.try1 {
+    padding: 35px;
+}
+span {
+    font-size: 26px;
+}
